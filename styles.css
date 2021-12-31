@@ -1,0 +1,360 @@
+@import url(http://fonts.cdnfonts.com/css/sf-mono);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+body {
+    line-height: 1
+}
+ol,
+ul {
+    list-style: none
+}
+blockquote,
+q {
+    quotes: none
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+a {
+    text-decoration: none
+}
+img {
+    max-width: 100%
+}
+body {
+    background: #b5dbd1
+}
+.container {
+    width: 1280px;
+    margin: 0 auto
+}
+.header {
+    background: rgb(255 255 255/70%);
+    position: fixed;
+    width: 100%;
+    z-index: 2
+}
+.ctn_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.ctn_header .logo {
+    width: 30%;
+    padding: 25px 20px
+}
+.ctn_header .hd_menu ul {
+    display: flex;
+    justify-content: end
+}
+.ctn_header .hd_menu {
+    width: 70%
+}
+.ctn_header .hd_menu li {
+    padding: 20px;
+    position: relative
+}
+.hd_menu li::after {
+    content: ".";
+    color: #ec725b;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-size: 26px
+}
+.hd_menu li:last-child:after {
+    display: none
+}
+.hd_menu a {
+    color: #ec725b;
+    font-size: 26px;
+    font-family: 'SF Mono', sans-serif;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #b5dbd1
+}
+.img_banner {
+    display: block;
+    width: 100%
+}
+.img_banner img {
+    width: 100%
+}
+.btn_play {
+    text-align: center;
+    position: absolute;
+    z-index: 1
+}
+.contract_section {
+    padding: 20px;
+    background-color: #e8e8e8;
+    text-align: center;
+    color: #555
+}
+.contract_section p {
+    font-size: 26px;
+    font-family: 'SF Mono', sans-serif;
+}
+.contract_section span {
+    font-weight: 700;
+    font-family: 'SF Mono', sans-serif;
+}
+.section_gameplay {
+    padding: 60px 0;
+    text-align: center
+}
+.section_nftshark {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #e8e8e8
+}
+.section_roadmap {
+    padding: 60px 0;
+    text-align: center
+}
+.footer {
+    background-color: #e8e8e8;
+    text-align: center;
+    position: relative
+}
+.ft_menu a {
+    font-size: 24px;
+    color: #555;
+    font-family: 'SF Mono', sans-serif;
+}
+.ft_menu {
+    display: flex;
+    justify-content: center;
+    align-content: center
+}
+.ft_menu li {
+    padding: 26px;
+    position: relative
+}
+.ft_menu li::after {
+    content: ".";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-size: 26px
+}
+.ft_menu li:last-child:after {
+    display: none
+}
+.social {
+    position: fixed;
+    top: 65%;
+    right: 20px
+}
+.social a {
+    color: #fff;
+    background-color: #ec725b;
+    padding: 10px;
+    display: block;
+    font-size: 30px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px
+}
+@media only screen and (max-width:1280px) {
+    .container {
+        width: 80%
+    }
+}
+@media only screen and (max-width:1024px) {
+    .ctn_header {
+        display: block
+    }
+    .ctn_header .hd_menu {
+        width: 100%;
+        text-align: center
+    }
+    .ctn_header .hd_menu li {
+        padding: 0 20px 10px
+    }
+    .ft_menu li {
+        padding: 10px 20px
+    }
+    .hd_menu li::after {
+        top: -10px
+    }
+    .ctn_header .logo {
+        width: 100%;
+        padding: 10px;
+        text-align: center
+    }
+    .ctn_header .hd_menu ul {
+        justify-content: center
+    }
+    .social {
+        top: 65%
+    }
+    .social a {
+        padding: 6px;
+        font-size: 15px
+    }
+    .contract_section p {
+        font-size: 20px
+    }
+}
+@media only screen and (max-width:768px) {
+    .logo img {
+        width: 50%
+    }
+    .hd_menu a,
+    .ft_menu a {
+        font-size: 18px
+    }
+    .ctn_header .hd_menu li {
+        padding: 0 15px 10px
+    }
+    .ft_menu li::after {
+        top: 0
+    }
+    .contract_section p {
+        font-size: 18px
+    }
+    .btn_play img {
+        width: 60%
+    }
+    .contract_section {
+        padding: 15px
+    }
+}
+@media only screen and (max-width:480px) {
+    .hd_menu a,
+    .ft_menu a {
+        font-size: 12px
+    }
+    .contract_section p {
+        font-size: 14px
+    }
+    .contract_section {
+        padding: 10px
+    }
+}
+@media only screen and (max-width:414px) {
+    .ctn_header .hd_menu li {
+        padding: 0 10px 10px
+    }
+    .ft_menu li {
+        padding: 8px
+    }
+    .ft_menu li::after {
+        top: -4px;
+        right: -4px
+    }
+}
+
+/*# sourceMappingURL=styles.css.map*/
